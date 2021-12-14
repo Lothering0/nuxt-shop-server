@@ -1,3 +1,4 @@
 node_modules
 uploads
 /example.jsonc
+/.env
