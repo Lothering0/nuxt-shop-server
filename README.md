@@ -1,6 +1,6 @@
 # Nuxt Shop (server)
 
-> :warning: This is page of server side of project and has information only about back-end. To full information look [main page](https://github.com/Lothering0/nuxt-shop-server)!
+> :warning: This is page of server side of project and has information only about back-end. To full information look [main page](https://github.com/Lothering0/nuxt-shop)!
 
 ## Technologies
 
