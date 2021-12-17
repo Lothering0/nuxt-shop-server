@@ -17,7 +17,7 @@ const app = express()
 app.use(cookieParser())
 app.use(cors({
   credentials: true,
-  origin: ['http://localhost:3000']
+  origin: [process.env.FRONTEND_ADDRESS]
 }))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
