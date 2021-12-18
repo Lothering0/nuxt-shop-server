@@ -1,6 +1,5 @@
 // Importing required modules
 const express = require('express')
-const session = require('express-session')
 const cors = require('cors')
 const cookieParser = require('cookie-parser')
 const errorMiddleware = require('./middleware/error_middleware')
