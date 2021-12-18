@@ -14,18 +14,6 @@ require("./helpers/db/mongodb.js")()
 const port = process.env.PORT || 9000
 const app = express()
 
-// Session settings
-app.set('trust proxy', 1)
-app.use(session({
-  secret: process.env.SESSION_SECRET,
-  resave: true,
-  saveUninitialized: false,
-  cookie: {
-    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
-    secure: process.env.NODE_ENV === 'production'
-  }
-}))
-
 // Configure middlewares
 app.use(cookieParser())
 app.use(cors({
