@@ -21,12 +21,14 @@ class AuthData {
       .cookie('jwt_access', accessToken, {
         httpOnly: true,
         maxAge: 24 * 60 * 60 * 1000,
-        sameSite: 'none'
+        sameSite: 'none',
+        secure: true
       })
       .cookie('jwt_refresh', refreshToken, {
         httpOnly: true,
         maxAge: 60 * 24 * 60 * 60 * 1000,
-        sameSite: 'none'
+        sameSite: 'none',
+        secure: true
       })
   }
 
