@@ -28,6 +28,10 @@ app.set('view engine', 'html')
 // app.use(express.static(__dirname + '/uploads/'))
 app.use(express.static('uploads'))
 
+app.get('/', (req, res) => {
+  res.send('<h3>This is back-end server of nuxt-shop project. <a href="https://nuxt-shop0.herokuapp.com">Click to go to the main page</a>.</h3>')
+})
+
 // Defining route middleware
 app.use('/api/posts', require('./routes/posts_api'))
 app.use('/api/basket', require('./routes/baskets_api'))
