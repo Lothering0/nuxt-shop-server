@@ -27,11 +27,13 @@ module.exports = function(req, res, next) {
       res
         .cookie('jwt_access', newAccessToken, {
           httpOnly: true,
-          maxAge: 24 * 60 * 60 * 1000
+          maxAge: 24 * 60 * 60 * 1000,
+          sameSite: 'lax'
         })
         .cookie('jwt_refresh', newRefreshToken, {
           httpOnly: true,
-          maxAge: 60 * 24 * 60 * 60 * 1000
+          maxAge: 60 * 24 * 60 * 60 * 1000,
+          sameSite: 'lax'
         })
 
       const accessToken = jwt.verify(newAccessToken, process.env.JWT_ACCESS_SECRET)
