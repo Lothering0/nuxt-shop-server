@@ -5,7 +5,7 @@
 ## Technologies
 
 * [Express 4](https://expressjs.com)
-* [MongoDB](https://mongoose.js) ([Mongoose](https://mongoose.js))
+* [MongoDB](https://www.mongodb.com) ([Mongoose](https://mongoosejs.com))
 * [bcrypt](https://www.npmjs.com/package/bcrypt)
 * [cookie-parser](https://www.npmjs.com/package/bcrypt)
 * [cors](https://www.npmjs.com/package/cors)
